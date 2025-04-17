@@ -1,29 +1,32 @@
-import './Login.css'
-import Lottie from 'lottie-react';
+import './signup.css'
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import React from 'react';
+import Login from './Login';
+import { useNavigate, Link } from 'react-router-dom';
 
-function Login(){
+function Signup(){
+    const nav = useNavigate();
+
     return(
         <div className='container'>
         <>
         <div className='animation'>
         <DotLottieReact
-      src="/login.json"  // Path to the .lottie file in the public folder
+      src="/signup.json"  // Path to the .lottie file in the public folder
       loop
       autoplay
     />
         </div>
             <div className='input'>
 
-                <h1>Login</h1>
+                <h1>Sign Up</h1>
+                <input type="text" placeholder='Enter your name '/>
                 <input type="text" placeholder='Enter mail/mobile'/>
                 <input type="password" placeholder='Enter password'/>
-                <button>Login</button>
+                <button>Signup</button>
                 <div className='forget'>
-                <p className="link-button"> forget password</p>
-                <p>?</p>
-                <p style={{cursor:'pointer'}}>New user</p>
+                    {/* <Link to={'/login'}>Existing</Link> */}
+                <p className="link-button" onClick={()=>nav("/login") }>existing user</p>
                 </div>
 
             </div>
@@ -33,4 +36,4 @@ function Login(){
     )
 }
 
-export default Login;
+export default Signup;

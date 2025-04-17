@@ -2,8 +2,10 @@ import './Login.css'
 import Lottie from 'lottie-react';
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function Login(){
+    const nav = useNavigate();
     return(
         <div className='container'>
         <>
@@ -23,7 +25,7 @@ function Login(){
                 <div className='forget'>
                 <p className="link-button"> forget password</p>
                 <p>?</p>
-                <p style={{cursor:'pointer'}}>New user</p>
+                <p style={{cursor:'pointer'}} onClick={()=>nav("/signup")}>New user</p>
                 </div>
 
             </div>
