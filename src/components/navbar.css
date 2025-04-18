@@ -10,8 +10,9 @@
 }
 
 #img{
-    width: 50px;
+    width: 75px;
     height:50px;
     margin-left: auto;
-    margin-top: 10x;
+    margin-top: 0px;
+    border-radius: 34%;
 }

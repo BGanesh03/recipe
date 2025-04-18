@@ -1,0 +1,78 @@
+.main{
+    display: flex;
+    /* align-items: center; */
+    margin-left: 24%;
+    /* text-align: center; */
+    width: 50%;
+}
+
+.image{
+    flex: 1;
+    margin-top: 20px;
+    /* margin-left: 20px; */
+    /* width: 20%; */
+    height: 255px;
+    background-color: rgb(250, 250, 250);
+    /* border-right: 1.3px; */
+    /* border-style: solid; */
+    /* border-color: black; */
+}
+.desc{
+    flex: 1;
+    margin-top: 20px;
+    padding-left: 50px;
+    /* margin-right: 20px; */
+    /* width: 55px; */
+    height: 250px;
+    background: #BE93C5;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #7BC6CC, #BE93C5);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #7BC6CC, #BE93C5);
+    /* border-left: 1.3px; */
+    /* border-style: solid;
+    border-color: black; */
+    overflow: auto;
+    /* text-align: center; */
+
+}
+
+.feedima{
+    margin-left: 20px ;
+   
+}
+
+.head{
+    background-color: rgb(219, 195, 230);
+    height: 30px;
+    /* width: 0%; */
+    display: flex;
+    flex-direction: row;
+}
+.userima{
+    border-radius: 40%;
+    background-size: cover;
+    margin-top: 6px;
+    margin-left: 9px;
+    width: 50px;
+    height:30px;
+}
+.user{
+    margin: 6.5px;
+    /* margin-top: 8px; */
+}
+.like{
+    background-color: rgb(219, 195, 230);
+    padding-left: 10px;
+    display: flex;
+    flex-direction: row;
+    height: 24.4px;
+    /* width: 100%; */
+    /* align-items: center; */
+    /* border-radius: 10px; */
+    /* padding-left: 20px; */
+}
+
+ul {
+    list-style-type: none;
+    padding-top: 10px;
+  }
+  
